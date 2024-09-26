@@ -1,1 +1,27 @@
 This file was created in Dev1 branch on the local comptuer
+
+ogcfg> get system.logging_cli_enabled
+root-1-system_logging_cli_enabled: Integer <False>
+ogcfg> set system.logging_cli_enabled
+Missing <value> field in set command
+ogcfg> set system.logging_cli_enabled true
+root-1-system_logging_cli_enabled: Integer <True>
+ogcfg> get system.logging_cli_enabled
+root-1-system_logging_cli_enabled: Integer <True>
+
+10.170.17.0/24 
+10.170.22.0/25 
+10.171.17.0/24 
+10.171.22.0/25 
+10.171.200.0/24 
+10.173.0.0/24 
+
+CUBELIDCDVT0MAIN01  CUBELIDCDVEGC02
+CUBELIDCDVT0SE01    CUBELIDCDVEGCSE01
+CUBELIDCDVEC01
+
+SG_LIDC_DV_GSSN_VLAN_3310 > TZ_LIDC_DV_CUBE_TEP | VLAN
+CUBELIDCDVEG01-02
+    TZ_LIDC_DV_CUBE_EDGES_VLAN
+    TZ_LIDC_DV_CUBE_OVERLAY
+Sep 23, 2024, 1:15:00 PM : [error_code=10059, module_name=ROUTING, error_message='[Routing] Transport node 0665cac5-d7c3-4676-b64a-d711f1438a03 /infra/sites/default/enforcement-points/default/edge-transport-node/0665cac5-d7c3-4676-b64a-d711f1438a03 of Edge cluster member must belong to transport zone 6b1e6e30-0b1f-419a-b474-ba5b7ffe993e TZ_LIDC_DV_CUBE_TEP of linked logical switch port 64379eb6-26a8-46a6-a1e6-1ae207cf374e.']
